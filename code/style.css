@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Dosis;
+    color: rgb(32, 33, 36);
+    background-color: rgb(243, 243, 243);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../resources/font/Dosis-Regular.otf");
+}
+
+@font-face {
+    font-family: Dosis_ExtraBold;
+    src: url("../resources/font/Dosis-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: Dosis_SemiBold;
+    src: url("../resources/font/Dosis-SemiBold.otf");
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 33, 36);
+}
+
+button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 4px 20px;
+    box-shadow: -4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+input {
+    border-radius: 10px;
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+ ::placeholder {
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #8a92a5;
+}
+
+.row_class {
+    padding: 0px;
+    margin: 0px;
+}
+
+.tab {
+    padding-right: 20px;
+}
+
+
+/* _header_ start*/
+
+
+/* container */
+
+._100_navi {
+    margin: 0px;
+    width: 100%;
+    min-height: 20px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    display: flex;
+    z-index: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* logo_column */
+
+.logo_link {
+    flex: 1;
+}
+
+.logo {
+    background-image: url("../resources/logo/ts_logo_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    padding: 0px 0px 0px 0%;
+    margin: auto;
+    border: none;
+    flex: .5;
+    background-position: center center;
+}
+
+
+/* menu_list_column */
+
+.navi {
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    min-height: 20px;
+    text-align: center;
+    display: block;
+    border: none;
+    flex: 1.5;
+    z-index: 1;
+}
+
+.navi a {
+    text-decoration: none;
+    display: inline;
+    /* text-align: center; */
+    padding: 30px 20px 30px 20px;
+    color: rgb(32, 33, 36);
+}
+
+.navi_button {
+    padding: 5px 10px;
+    color: rgb(32, 33, 36);
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    z-index: 2;
+}
+
+.navi .closebtn {
+    display: none;
+    padding: 0px 0px 0px 5px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+/* navi end */
+
+
+/* hover */
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #057ecf
+}
+
+a:active {
+    cursor: pointer;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+button:hover {
+    cursor: pointer;
+    color: #057ecf;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+._100_navi a:active {
+    cursor: pointer;
+    border: none;
+}
+
+.navi a:active {
+    color: #057ecf;
+}
+
+.fa-shopping-cart:hover {
+    color: #057ecf;
+}
+
+
+/* hover */
+
+
+/* first_image_blog */
+
+.first_blog {
+    /* width: 100%; */
+    height: 600px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../resources/techSpot/17\ \(1\).jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* Bowls & Platters */
+
+.bowls {
+    padding: 50px 50px;
+    /* text-align: center; */
+    min-height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bowls h5 {
+    font-family: Dosis_SemiBold;
+}
+
+.bowls h3 {
+    font-family: Dosis_ExtraBold;
+}
+
+.bowls p {
+    font-family: Dosis_SemiBold;
+}
+
+
+/* _header_end */
+
+
+/* What we offer & Our Blog start */
+
+.title_blog {
+    padding: 40px 0px;
+    min-height: 50px;
+    text-align: center;
+}
+
+.title_blog .div_line {
+    height: 2px;
+    background-color: #5E5C4D;
+}
+
+.title_blog p {
+    font-size: 2vw;
+}
+
+
+/* What we offer & Our Blog end */
+
+
+/* <!-- Second image Blog Start --> */
+
+.second_blog .img_div {
+    margin: 0 auto;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    /* float: left; */
+}
+
+.second_blog .buttom_padding {
+    padding: 0px 0px 40px 0px;
+}
+
+.second_blog .one {
+    background-image: url("../resources/techSpot/18.webp");
+}
+
+.second_blog .two {
+    background-image: url("../resources/techSpot/20.webp");
+}
+
+
+/* <!-- Second image Blog End --> */
+
+
+/* fifth img blog start */
+
+.fifth_blog {
+    margin: 0px;
+    height: 400px;
+    position: relative;
+}
+
+.fifth_blog .img_div {
+    width: 100%;
+    height: 300px;
+    background-image: url("../resources/techSpot/9.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.fifth_blog .posation_div {
+    padding: 40px 0px;
+    width: 50%;
+    min-height: 100px;
+    font-family: Dosis_SemiBold;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    bottom: 40px;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.fifth_blog p {
+    letter-spacing: 2px;
+}
+
+.fifth_blog h3 {
+    letter-spacing: 2px;
+}
+
+.fifth_blog input {
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+
+/* fifth img blog end */
+
+
+/* _footer_start */
+
+.eight_blog {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.eight_blog div {
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+}
+
+.eight_blog h3 {
+    margin: 0px;
+    padding: 30px 0px 0px 60px;
+}
+
+.eight_blog p {
+    margin: 0px;
+    padding: 10px 0px 10px 60px;
+}
+
+.eight_blog ul {
+    margin: 0px;
+    padding: 10px 0px 10px 60px;
+}
+
+.eight_blog li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.copyright {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+}
+
+.copyright p {
+    padding: 0px;
+    margin: 0px;
+    color: rgba( 255, 255, 255, 1);
+}
+
+
+/* sixth_blog_start */
+
+.sixth_blog {
+    height: 100px;
+    padding-bottom: 40px;
+    clear: both;
+}
+
+.sixth_blog .img_div {
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sixth_blog .i_1 {
+    background-image: url("../resources/techSpot/3.png");
+}
+
+.sixth_blog .i_2 {
+    background-image: url("../resources/techSpot/4.png");
+}
+
+.sixth_blog .i_3 {
+    background-image: url("../resources/techSpot/5.png");
+    height: 20px;
+}
+
+
+/* sixth_blog_end */
+
+
+/* _footer_end */
+
+
+/* _responsive_ */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* _navi_start */
+    .navi .closebtn {
+        display: block;
+    }
+    ._100_navi {
+        background-color: rgb( 255, 255, 255, 0.8);
+    }
+    .navi {
+        width: 0;
+        position: fixed;
+        min-height: 50px;
+        top: 0;
+        right: 0;
+        background-color: rgb( 255, 255, 255, 0.8);
+        transition: 0.5s;
+    }
+    .navi_button {
+        display: block;
+    }
+    .navi a {
+        padding: 0px 40px;
+        margin: 0px;
+        display: block;
+        width: 100%;
+        float: none;
+        border-bottom: 2px solid white;
+        line-height: 80px;
+    }
+    /* _navi_end */
+    /* What we offer start */
+    .title_blog p {
+        font-size: 4vw;
+        padding: 0px;
+        margin: 0px;
+    }
+    /* What we offer end */
+    /* <!-- Second image Blog Start --> */
+    .second_blog .img_div {
+        margin: 0px auto 30px auto;
+    }
+    /* <!-- Second image Blog End --> */
+    /* fourth img blog start */
+    .fourth_blog .my-auto {
+        padding: 300px 0px 130px 0px;
+    }
+    .fourth_blog .space {
+        width: 100%;
+        display: block;
+        height: 40px;
+    }
+    /* fourth img blog end */
+    /* fifth blog start */
+    .fifth_blog .posation_div {
+        padding: 40px 0px;
+        width: 100%;
+        left: 0px;
+        bottom: 40px;
+    }
+    /* fifth blog end */
+    /* _footer_start */
+    .eight_blog {
+        display: block;
+    }
+    .eight_blog p {
+        margin: 0px;
+        padding: 10px 60px 10px 60px;
+    }
+    .copyright p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 12px;
+        color: rgba( 255, 255, 255, 1);
+    }
+    /* _footer_end */
+}

@@ -1,0 +1,604 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Dosis;
+    color: rgb(32, 33, 36);
+    background-color: rgb(243, 243, 243);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../../resources/font/Dosis-Regular.otf");
+}
+
+@font-face {
+    font-family: Dosis_ExtraBold;
+    src: url("../../resources/font/Dosis-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: Dosis_SemiBold;
+    src: url("../../resources/font/Dosis-SemiBold.otf");
+}
+
+a {
+    text-decoration: none;
+    color: rgb(32, 33, 36);
+}
+
+button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 4px 20px;
+    box-shadow: -4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+input {
+    border-radius: 10px;
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+ ::placeholder {
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #8a92a5;
+}
+
+.row_class {
+    padding: 0px;
+    margin: 0px;
+}
+
+.tab {
+    padding-right: 20px;
+}
+
+
+/* details page */
+
+.d_header {
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: right;
+}
+
+.row .photo_div {
+    padding: 20px;
+    height: 540px;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+    position: sticky;
+    top: 0;
+}
+
+.row .photo_div div {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center center;
+}
+
+.row .detail_div {
+    padding: 20px;
+    min-height: 500px;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.row .detail_div div {
+    width: 100%;
+    min-height: 400px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row .detail_div .about_div {
+    width: 90%;
+    min-height: 300px;
+    padding: 20px;
+    margin: 0 auto;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255), 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+
+/* _header_ start*/
+
+
+/* container */
+
+._100_navi {
+    margin: 0px;
+    width: 100%;
+    min-height: 20px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    display: flex;
+    z-index: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+
+/* logo_column */
+
+.logo_link {
+    flex: 1;
+}
+
+.logo {
+    background-image: url("../../resources/logo/ts_logo_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    padding: 0px 0px 0px 0%;
+    margin: auto;
+    border: none;
+    flex: .5;
+    background-position: center center;
+}
+
+
+/* menu_list_column */
+
+.navi {
+    padding: 15px 0px 0px 0px;
+    margin: 0px;
+    min-height: 20px;
+    text-align: center;
+    display: block;
+    border: none;
+    flex: 1.5;
+    z-index: 2;
+}
+
+.navi a {
+    text-decoration: none;
+    display: inline;
+    /* text-align: center; */
+    padding: 30px 20px 30px 20px;
+    color: rgb(32, 33, 36);
+}
+
+.navi_button {
+    padding: 5px 10px;
+    color: rgb(32, 33, 36);
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 5px;
+    z-index: 2;
+}
+
+.navi .closebtn {
+    display: none;
+    padding: 0px 0px 0px 5px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+/* navi end */
+
+
+/* hover */
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #057ecf
+}
+
+a:active {
+    cursor: pointer;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+button:hover {
+    cursor: pointer;
+    color: #057ecf;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+._100_navi a:active {
+    cursor: pointer;
+    border: none;
+}
+
+.navi a:active {
+    color: #057ecf;
+}
+
+.fa-shopping-cart:hover {
+    color: #057ecf;
+}
+
+
+/* hover */
+
+
+/* add new items */
+
+.add {
+    padding: 2px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    color: darkslategray;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    top: 200px;
+}
+
+
+/* select */
+
+select {
+    font-size: 16px;
+    font-family: 'FontAwesome';
+    padding: 4px 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255), 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+select:hover {
+    color: #057ecf;
+}
+
+select:active {
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.edit {
+    color: rgb(0, 161, 35);
+}
+
+.delete {
+    color: crimson;
+}
+
+
+/* first_blog start */
+
+.first_blog {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+    background-image: url("../../resources/techSpot/pexels-cottonbro-5054213.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.first_blog p {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-size: 8pt;
+}
+
+
+/* first_blog end */
+
+
+/* second blog start */
+
+.second_blog {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.second_blog div {
+    height: 40px;
+    padding: 10px 0% 40px 0%;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(243, 243, 243);
+    box-shadow: -4px -4px 8px rgb(255, 255, 255), 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.second_blog a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.second_blog span {
+    padding: 0px 10px;
+}
+
+
+/* second blog end */
+
+
+/* filter */
+
+.float_categories {
+    border: 0px;
+    padding: 0px 16px;
+    margin: 0px;
+    width: 25%;
+    min-height: 300px;
+    float: left;
+}
+
+.check_list {
+    height: 180px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* shop start*/
+
+.float_items {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    width: 75%;
+    min-height: 300px;
+    float: left;
+}
+
+.colum {
+    padding: 30px 10px 10px 20px;
+    margin: 0px;
+    width: 100%;
+    min-height: 700px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255), 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.colum .brand {
+    width: 50px;
+    float: right;
+    padding: 10px;
+}
+
+.colum .images {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.colum .details {
+    width: 100%;
+    float: right;
+}
+
+.colum .icon {
+    padding: 0px 0px 4px 0px;
+    margin: 0px;
+    width: 22px;
+    height: 22px;
+}
+
+.colum .option_div {
+    padding: 0px 25%;
+}
+
+.colum #options {
+    padding: 5px;
+    margin: 0px;
+}
+
+.colum .color {
+    padding: 0px;
+    margin: 0px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+}
+
+
+/* shop end*/
+
+
+/* Content start */
+
+.fifth_blog {
+    margin: 0px;
+    height: 400px;
+    position: relative;
+}
+
+.fifth_blog .img_div {
+    width: 100%;
+    height: 300px;
+    background-image: url("../../resources/techSpot/pexels-andrea-piacquadio-919436.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.fifth_blog .posation_div {
+    padding: 40px 0px;
+    width: 50%;
+    min-height: 100px;
+    font-family: Dosis_SemiBold;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    bottom: 40px;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+.fifth_blog p {
+    letter-spacing: 2px;
+}
+
+.fifth_blog h3 {
+    letter-spacing: 2px;
+}
+
+.fifth_blog input {
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    width: 60%;
+}
+
+
+/* Content end */
+
+
+/* _footer_start */
+
+.eight_blog {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.eight_blog div {
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+}
+
+.eight_blog h3 {
+    margin: 0px;
+    padding: 30px 0px 0px 60px;
+}
+
+.eight_blog p {
+    margin: 0px;
+    padding: 10px 0px 10px 60px;
+}
+
+.eight_blog ul {
+    margin: 0px;
+    padding: 10px 0px 10px 60px;
+}
+
+.eight_blog li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.copyright {
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+}
+
+.copyright p {
+    padding: 0px;
+    margin: 0px;
+    color: rgba( 255, 255, 255, 1);
+}
+
+
+/* sixth_blog_start */
+
+.sixth_blog {
+    height: 100px;
+    padding-bottom: 40px;
+    clear: both;
+}
+
+.sixth_blog .img_div {
+    height: 40px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sixth_blog .i_1 {
+    background-image: url("../../resources/techSpot/3.png");
+}
+
+.sixth_blog .i_2 {
+    background-image: url("../../resources/techSpot/4.png");
+}
+
+.sixth_blog .i_3 {
+    background-image: url("../../resources/techSpot/5.png");
+    height: 20px;
+}
+
+
+/* sixth_blog_end */
+
+
+/* _footer_end */
+
+
+/* responsive start */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    /* _navi_start */
+    .navi .closebtn {
+        display: block;
+    }
+    ._100_navi {
+        background-color: rgb( 255, 255, 255, 0.8);
+    }
+    .navi {
+        width: 0;
+        position: fixed;
+        min-height: 50px;
+        top: 0;
+        right: 0;
+        background-color: rgb( 255, 255, 255, 0.8);
+        transition: 0.5s;
+    }
+    .navi_button {
+        display: block;
+    }
+    .navi a {
+        text-decoration: none;
+        padding: 0px 40px;
+        margin: 0px;
+        display: block;
+        width: 100%;
+        float: none;
+        border-bottom: 2px solid white;
+        line-height: 80px;
+    }
+    /* _navi_end */
+    /* shop item start */
+    .shops_items .img_div {
+        margin: 0px auto 30px auto;
+    }
+    /* shop item start */
+    /* _footer_start */
+    .eight_blog {
+        display: block;
+    }
+    .eight_blog p {
+        margin: 0px;
+        padding: 10px 60px 10px 60px;
+    }
+    .copyright p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 12px;
+        color: rgba( 255, 255, 255, 1);
+    }
+    /* _footer_end */
+}

@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Dosis;
+    color: rgb(32, 33, 36);
+    background-color: rgb(243, 243, 243);
+}
+
+@font-face {
+    font-family: Dosis;
+    src: url("../resources/font/Dosis-Regular.otf");
+}
+
+@font-face {
+    font-family: Dosis_ExtraBold;
+    src: url("../resources/font/Dosis-ExtraBold.otf");
+}
+
+@font-face {
+    font-family: Dosis_SemiBold;
+    src: url("../resources/font/Dosis-SemiBold.otf");
+}
+
+a {
+    text-decoration: none;
+    color: rgb(3, 112, 112);
+}
+
+p {
+    clear: both;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: rgb(3, 112, 112);
+    outline: none;
+    border: none;
+    box-shadow: -4px -4px 12px rgb(255, 255, 255), 4px 4px 12px rgba(121, 130, 160, 0.747);
+}
+
+input {
+    border-radius: 10px;
+    padding: 8px 24px;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+ ::placeholder {
+    text-align: center;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #8a92a5;
+}
+
+.row_class {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* hover */
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #057ecf
+}
+
+a:active {
+    cursor: pointer;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+button:hover {
+    cursor: pointer;
+    color: #057ecf;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+
+/* hover end*/
+
+h1 {
+    padding: 16px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 139, 139, 0.575);
+}
+
+
+/* side-bar */
+
+.sidebar {
+    padding: 50px;
+    width: 25%;
+    float: left;
+    min-height: 200px;
+}
+
+.del {
+    color: darkred;
+}
+
+
+/* side-bar end*/
+
+
+/* main */
+
+.main {
+    padding: 50px;
+    margin: 0px;
+    width: 70%;
+    float: left;
+    min-height: 200px;
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    box-shadow: -4px -4px 8px rgb(255, 255, 255), 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+
+/* table boucher */
+
+table {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: 2px solid rgba(0, 139, 139, 0.575);
+}
+
+th {
+    padding: 10px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 139, 139, 0.575);
+}
+
+td {
+    padding: 10px;
+    margin: 0px;
+    color: rgb(3, 112, 112);
+    /* background-color: rgb(255, 255, 255); */
+    outline: none;
+    border: none;
+    background: #ebecf0;
+    box-shadow: inset -4px -4px 8px rgb(255, 255, 255), inset 4px 4px 8px rgba(121, 130, 160, 0.747);
+}
+
+
+/* order form */
+
+h2 {
+    color: rgb(3, 112, 112);
+}
+
+
+/* main end*/
+
+
+/* footer */
+
+footer {
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(0, 139, 139, 0.575);
+}
+
+
+/* submit-order.php */
+
+.os {
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+
+/* footer end*/
